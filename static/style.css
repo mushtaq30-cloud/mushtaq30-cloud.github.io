@@ -1,0 +1,287 @@
+:root {
+    --primary: #023e8a;
+    --secondary: #38b6ff;
+    --accent: #ffd700;
+    --glass-bg: rgba(255,255,255,0.77);
+    --glass-blur: blur(11px);
+    --shadow: 0 6px 32px #023e8a11;
+    --radius: 18px;
+    --font-header: 'Montserrat', 'Roboto', Arial, sans-serif;
+    --font-body: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    color: #123;
+    font-family: var(--font-body);
+}
+
+.hero {
+    background: linear-gradient(90deg, #023e8a 60%, #38b6ff 100%);
+    color: #fff;
+    box-shadow: 0 2px 16px #023e8a11;
+    padding: 0 0 2rem 0;
+}
+
+.hero-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 2.7rem 2rem 0 2rem;
+}
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #eee;
+    box-shadow: 0 5px 45px #0004;
+    transition: transform .22s;
+}
+.hero-photo:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 9px 48px #0005;
+}
+.hero-text {
+    flex: 1;
+}
+.hero h1 {
+    font-family: var(--font-header);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    letter-spacing: 0.01em;
+}
+.hero h2 {
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.1em;
+    margin-bottom: 0.9em;
+    letter-spacing: .05em;
+}
+.hero h2 span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.headline {
+    margin-bottom: 1.7em;
+    font-size: 1.08em;
+    color: #dbeafe;
+}
+.headline .highlight {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.hero-links {
+    display: flex;
+    gap: 1.2rem;
+}
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.2rem;
+    background: #fff;
+    color: var(--primary);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    box-shadow: 0 1px 6px #0002;
+    text-decoration: none;
+    transition: background .15s, color .15s, transform .17s, box-shadow .13s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.contact-btn:hover, .contact-btn:focus {
+    background: var(--accent);
+    color: #023e8a;
+    transform: scale(1.14);
+    box-shadow: 0 5px 22px #ffd70033;
+}
+.resume-btn {
+    border-radius: 26px;
+    font-size: 1.07rem;
+    font-weight: 700;
+    width: auto;
+    padding: 0 18px;
+    background: linear-gradient(90deg, #ffd700 60%, #fff8dc 100%);
+    color: #023e8a;
+    border: 2px solid #ffd700;
+    margin-left: 1.7rem;
+    box-shadow: 0 1px 8px #ffd70033;
+}
+.resume-btn:hover {
+    background: linear-gradient(90deg, #fff8dc 20%, #ffd700 80%);
+    color: #023e8a;
+    border-color: #eab308;
+}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto 0 auto;
+    padding: 2.2rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem;
+}
+.glass-card {
+    background: var(--glass-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem 1.5rem 1.3rem 1.5rem;
+    margin-bottom: 0;
+    transition: box-shadow .19s, transform .18s;
+    border: 1px solid #e8eefc;
+}
+.glass-card:hover, .glass-card:focus-within {
+    box-shadow: 0 10px 38px #023e8a22;
+    transform: translateY(-2px) scale(1.02);
+    border-color: var(--secondary);
+}
+
+.glass-card h3 {
+    font-family: var(--font-header);
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    font-size: 1.1rem;
+    letter-spacing: .04em;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.6em 1em;
+    margin: 0.4em 0 1.2em 0;
+    padding: 0;
+}
+.chips li {
+    background: #e7f1fa;
+    color: #023e8a;
+    border-radius: 18px;
+    padding: 0.48em 1.2em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    box-shadow: 0 1px 5px #023e8a10;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: background .15s, color .15s, box-shadow .13s, transform .12s;
+    cursor: pointer;
+    border: 1px solid #d0ebff;
+}
+.chips li:hover, .chips li:focus {
+    background: var(--secondary);
+    color: #fff;
+    transform: scale(1.09);
+    box-shadow: 0 2px 11px #38b6ff44;
+    border-color: var(--secondary);
+}
+
+.exp {
+    grid-column: 1 / 3;
+}
+.exp-item {
+    background: #f8fafc;
+    border-radius: 11px;
+    margin-bottom: 1.1em;
+    box-shadow: 0 1px 4px #023e8a10;
+    padding: 1em 1.3em 0.5em 1.3em;
+    transition: box-shadow .15s, background .15s;
+}
+.exp-item:hover, .exp-item:focus-within {
+    box-shadow: 0 6px 22px #38b6ff1a;
+    background: #e7f1fa;
+}
+.exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: baseline;
+    margin-bottom: 0.2em;
+}
+.exp-role {
+    font-weight: 700;
+    color: #023e8a;
+}
+.exp-company {
+    color: #1976d2;
+    font-weight: 600;
+}
+.exp-date {
+    font-size: 0.96em;
+    color: #888;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0.4em 0 0.7em 1.5em;
+}
+li {
+    margin-bottom: 0.35em;
+}
+
+@media (max-width: 950px) {
+    .hero-inner, main {
+        flex-direction: column;
+        display: block;
+        padding: 1.2rem 0.6rem 0 0.6rem;
+    }
+    main {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 1.2rem 0.6rem 0.8rem 0.6rem;
+    }
+    .exp {
+        grid-column: 1 / 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-inner {
+        gap: 1.1rem;
+        padding: 1.1rem 0.2rem 0 0.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-photo {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0.5em;
+    }
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+    .glass-card {
+        padding: 1rem 0.6rem 0.6rem 0.6rem;
+    }
+}
+
+footer {
+    background: #01306e;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    letter-spacing: .01em;
+    border-radius: 0 0 18px 18px;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 16px #023e8a11;
+}
