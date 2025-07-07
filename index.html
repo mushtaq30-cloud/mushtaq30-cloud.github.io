@@ -8,41 +8,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="profile">
-                <img src="profile.jpg" alt="Mushtaq Ahmed Shaik" class="profile-img"/>
-                <div>
-                    <h1>Mushtaq Ahmed Shaik</h1>
-                    <h2>Senior DevOps Engineer (Ansible Developer Specialization)</h2>
-                    <p class="summary">
-                        Seasoned DevOps Engineer with 9+ years of experience automating infrastructure, enhancing CI/CD pipelines, and optimizing system performance. Proficient in Ansible, Terraform, Jenkins, and in-house cloud solutions. Adept at collaborating with cross-functional teams to deliver scalable and secure systems. Committed to continuous improvement and innovation.
-                    </p>
-                    <ul class="contact">
-                        <li><strong>Phone:</strong> <a href="tel:+919972799918">+91 9972799918</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:Mushtaq.sap7@gmail.com">Mushtaq.sap7@gmail.com</a></li>
-                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mushtaq30-cloud" target="_blank">linkedin.com/in/mushtaq30-cloud</a></li>
-                        <li><strong>Download CV:</strong> <a href="Mushtaq_Ahmad_Resume.pdf" download>PDF Resume</a></li>
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Mushtaq Ahmed Shaik" class="profile-img"/>
+            <div class="sidebar-section">
+                <h2>Contact</h2>
+                <ul>
+                    <li><strong>Phone:</strong> <a href="tel:+919972799918" class="hover-pop">+91 9972799918</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:Mushtaq.sap7@gmail.com" class="hover-pop">Mushtaq.sap7@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mushtaq30-cloud" class="hover-pop" target="_blank">mushtaq30-cloud</a></li>
+                    <li><strong>Download CV:</strong> <a href="Mushtaq_Resume.pdf" download class="hover-pop">PDF Resume</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="content">
+            <header>
+                <h1>Mushtaq Ahmed Shaik</h1>
+                <h2>Senior DevOps Engineer (Ansible Developer Specialization)</h2>
+            </header>
+            <section class="section profile-summary">
+                <p>
+                    Seasoned DevOps Engineer with 9+ years of experience automating infrastructure, enhancing CI/CD pipelines, and optimizing system performance.<br>
+                    Proficient in Ansible, Terraform, Jenkins, and in-house cloud solutions. Adept at collaborating with cross-functional teams to deliver scalable and secure systems. Committed to continuous improvement and innovation.
+                </p>
+            </section>
+            <section class="section personal-skills">
+                <h3>Personal Skills</h3>
+                <ul class="skills-list">
+                    <li class="skill-hover">Quick Adaptability</li>
+                    <li class="skill-hover">Communication</li>
+                    <li class="skill-hover">Collaboration</li>
+                    <li class="skill-hover">Problem Solving</li>
+                    <li class="skill-hover">Research</li>
+                    <li class="skill-hover">Decision Making</li>
+                </ul>
+            </section>
+            <section class="section pro-skills">
+                <h3>Professional Skills</h3>
+                <ul class="skills-list">
+                    <li class="skill-hover">CI/CD: Jenkins, XL Release, Bitbucket</li>
+                    <li class="skill-hover">IaC: Ansible, Terraform, Docker, Kubernetes, OpenShift</li>
+                    <li class="skill-hover">Cloud: IBM In-house, AWS, Azure, GCP, OCI</li>
+                    <li class="skill-hover">Scripting: Shell, Python</li>
+                    <li class="skill-hover">Monitoring: Splunk, AppDynamics, Kibana</li>
+                    <li class="skill-hover">SQL (basic)</li>
+                    <li class="skill-hover">Ticketing: Remedy, Assyst, Jira</li>
+                    <li class="skill-hover">SAP: ECC 6.0, BI 7.0</li>
+                </ul>
+            </section>
+            <section class="section experience">
+                <h3>Work Experience</h3>
+                <div class="exp-item card-hover">
+                    <h4>Bank of America – Software Engineer II A <span>| Hyderabad | 2022-Present</span></h4>
+                    <ul>
+                        <li>DevOps/SRE engineer for MuleSoft Platform. Onboard applications using Mule API to CI/CD.</li>
+                        <li>Developed Ansible playbooks, Shell & Python scripts for server build & deployments.</li>
+                        <li>Architected automation utilities for onboarding & maintenance.</li>
+                        <li>Automated JVM build with Ansible & OS templates for in-house cloud.</li>
+                        <li>Troubleshot build/deploy failures and facilitated resolutions.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- ...rest of your sections as before... -->
-        <section class="skills-personal">
-            <h3>Personal Skills</h3>
-            <div class="skills-list">
-                <span>Quick Adaptability</span>
-                <span>Communication</span>
-                <span>Collaboration</span>
-                <span>Problem Solving</span>
-                <span>Research</span>
-                <span>Decision Making</span>
-            </div>
-        </section>
-        <!-- ...other sections unchanged... -->
-    </main>
+                <div class="exp-item card-hover">
+                    <h4>Bank of America – Software Engineer II B <span>| Hyderabad | 2021-2022</span></h4>
+                    <ul>
+                        <li>Automated build & deploy processes with CI/CD.</li>
+                        <li>Maintained XLR trains for orchestrating release processes.</li>
+                        <li>Configuration management with Ansible and in-house tools.</li>
+                        <li>Collaborated with LOB, Dev, and Ops for business requirements.</li>
+                    </ul>
+                </div>
+                <div class="exp-item card-hover">
+                    <h4>Bank of America – Senior Software Engineer <span>| Hyderabad | 2019–2021</span></h4>
+                    <ul>
+                        <li>SME for Contact Center Desktop and GWIM desktop applications.</li>
+                        <li>Incident, change, and problem management, production troubleshooting.</li>
+                        <li>Automated daily & critical tasks to reduce errors.</li>
+                        <li>Monitored infrastructure & application performance (Splunk, AppDynamics, DNT, SiteScope).</li>
+                    </ul>
+                </div>
+                <div class="exp-item card-hover">
+                    <h4>HCL Technologies – Software Engineer <span>| Noida | 2016–2019</span></h4>
+                    <ul>
+                        <li>SAP user administration, troubleshooting, kernel upgrades, ABAP monitoring.</li>
+                        <li>Oracle DB upgrade/installation, SAP system refresh activities.</li>
+                        <li>Provided SAP and DB health checks, tablespace management, and support.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section certifications card-hover">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Microsoft certified Azure Administrator (AZ104)</li>
+                    <li>Oracle Cloud Infrastructure 2019 Certified Architect Associate (1Z0-1072)</li>
+                    <li>DevOps Foundation® Certification – DevOps Institute</li>
+                    <li>Certified DevOps Engineer – Foundation – DEVOPS UNIVERSITY</li>
+                    <li>Site Reliability Engineering (SRE) Foundation℠ – DevOps Institute</li>
+                </ul>
+            </section>
+            <section class="section education card-hover">
+                <h3>Education</h3>
+                <div>
+                    <b>B.Tech in Mechanical Engineering</b> – JNTU Kakinada (2011 - 2015)
+                </div>
+            </section>
+            <section class="section accomplishments card-hover">
+                <h3>Key Accomplishments</h3>
+                <ul>
+                    <li>Silver badge: Single click migration utility for Anypoint PCE to Cloud (Ansible integration with web app, reduced time from 4–5 hrs to 2–3 mins)</li>
+                    <li>Gold: Smart build automation utility for Mule JVMs</li>
+                    <li>Bronze: JVM build process automation for Mule app servers using Ansible Playbook</li>
+                    <li>Silver: End-to-end documentation on Informatica workflows</li>
+                    <li>Silver: Support in ERS & Siebel release with extended onshore hours</li>
+                    <li>Silver: Partial automation (esmart scripts) for CIU audit/reporting</li>
+                    <li>Multiple High-five awards & e-cards from peers</li>
+                </ul>
+            </section>
+            <section class="section patents card-hover">
+                <h3>Patent / Intellectual Properties</h3>
+                <ul>
+                    <li>Filed a Patent: “Provisioning System for automatic configuration of Software development lab environment”</li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2025 Mushtaq Ahmed Shaik. All rights reserved.</p>
     </footer>
