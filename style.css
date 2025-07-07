@@ -1,0 +1,27 @@
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #eee;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}
